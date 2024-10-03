@@ -25,6 +25,23 @@ if (email_list.includes(user_email)){
 //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. 
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
+//1-generare numero per il giocatore
+//2-generare numero per il player
+//3-se il giocatore ha il numero più alto ha vinto
+//4-se il computer ha il numero più alto ha vinto
+
+let player=(Math.floor(Math.random()*7)+1);
+let computer=Math.floor(Math.random()*7)+1;
+/* console.log(player);
+console.log(computer); */
+if(player>computer){
+    console.log(`Player WINS with ${player} and Computer loses with ${computer}`);
+}else if (player==computer){
+    console.log(`Parity, Player with ${player} and Computer with ${computer}`);
+}else{
+    console.log(`Computer WINS with ${computer} and Player loses with ${player}`);
+}
+
 
 
 
